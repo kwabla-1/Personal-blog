@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>blog</title>
+</head>	
+<body>
+	<section class="">
+		<div class="bg-headerColor  px-4 py-6">
+			<nav class="md:flex md:justify-between md:items-center " >
+				<!-- LOGOG -->
+				<div class="">
+					<a href="/">LOGO</a>
+				</div>
+	
+				<!-- LEFT NAVIGATION -->
+				<div class="flex items-center space-x-8 text-sm">
+					<a href="#" class="bg-primaryColor text-white py-1 px-5 rounded-md">Blog</a>
+					<a href="#" class="hover:bg-primaryColor hover:text-white py-1 px-5 rounded-md">About</a>
+					<a href="#" class="hover:bg-primaryColor hover:text-white py-1 px-5 rounded-md">Projects</a>
+	
+					<!-- USER PROFILE ICON -->
+					<div class=""">
+						<a href="#" class="flex items-center "> tupack 
+							<img class="h-10 w-10 rounded-full ml-3" src="./img/profile.jpg" alt="profile-photo"> 
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<!-- MAIN HEADER SECTION -->
+		<header class="max-w-6xl mx-auto text-center mt-6">
+			<h1 class="text-4xl mb-2">Practical Programming, Guides and Tutorials</h1>
+			<p class="text-sm">Browse throught a comprehensive set of tutorials,tips and guides</p>
+
+			<!-- THE SEARCH, FILTER AND CATEGORY -->
+			<div class="w-1/2 mx-auto">
+				<!-- SEARCH -->
+				<label class="block m-3">
+					<input 
+						type="text" 
+						name="search" 
+						id="search" 
+						placeholder="Search for something"
+						class="border-[1px] radi rounded-md px-3 py-2 w-full block placeholder-slate-400"
+					>
+				</label>
+
+				<!-- FILTER SEACHTION -->
+				<div class="flex justify-center items-center space-x-12">
+					<div class="">
+						<select name="category" id="category" class="flex-1 py-1 px-6 rounded-md pl-3 bg-primaryColor text-white text-sm">
+							<option value="" selected>Category</option>
+							<option value="laravel">laravel</option>
+							<option value="laravel">Vue</option>
+							<option value="laravel">Javascrip</option>
+							<option value="laravel">PHP</option>
+							<option value="laravel">Tailwind</option>
+						</select>
+					</div>
+
+					<div class="">
+						<select name="category" id="category" class="flex-1 py-1 px-6 rounded-md pl-3 bg-primaryColor text-white text-sm">
+							<option value="" selected>Filter</option>
+							
+							<option value="laravel">Tips</option>
+							<option value="laravel">Tutorials</option>
+							<option value="laravel">Guides</option>
+							
+						</select>
+					</div>
+					<!-- <svg class="transform -rotate-90 absolute pointer-events-none" style="right: 12px;" width="22" height="22" viewBox="0 0 22 22">
+						<g fill="none" fill-rule="evenodd">
+							<path stroke="#000" stroke-opacity=".012" stroke-width=".5" d="M21 1v20.16H.84V1z"></path>
+							<path fill="#222" d="M13.854 7.224l-3.847 3.856 3.847 3.856-1.184 1.184-5.04-5.04 5.04-5.04z"></path>
+						</g>
+                    	</svg> -->
+				</div>
+			</div>
+		</header>
+
+		<main>
+			the main section of the page
+		</main>
+	</section>
+</body>
+</html>
+<script>
+	tailwind.config = {
+		theme : {
+			colors: {
+				'fontColor': '#5F5F5F',
+				'headerColor': '#E9E9E9',
+				'primaryColor': '#464646',
+				'white': '#FFFFFF',
+				'textColor': 'red',
+			},
+			fontFamily: {
+				lato: ['lato']
+			},
+			
+			extends: {
+				dropShadow: {
+					'header': '0 0 0 4px red'
+				}
+			}
+		}
+	}
+</script>
