@@ -7,7 +7,7 @@
 	<title>blog</title>
 </head>	
 <body>
-	<section class="">
+	<section class="px-6 py-8">
 		<div class="bg-headerColor  px-4 py-6">
 			<nav class="md:flex md:justify-between md:items-center " >
 				<!-- LOGOG -->
@@ -82,8 +82,68 @@
 			</div>
 		</header>
 
-		<main>
-			the main section of the page
+		<main class="max-w-6xl mx-auto mt-6 lg:mt-20">
+			<!-- THE HERO ARTICLE -->
+			<article class="transition duration-300 rounded-xl hover:bg-articleHover">
+				<div class="lg:flex px-5 py-6">
+					<!-- THE LEFT SIDE OF THE ARTICLE I.E THE IMAGE CONTAINER -->
+					<div class="flex-1 lg:mr-8">
+						<img src="./img/profile.jpg" alt="article image" class="rounded-xl">
+					</div>
+
+					<div class="flex-1">
+						<header class="mt-8 lg:mt-0">
+							<!-- FILTERS AND CATEGORY -->
+							<div class="space-x-4">
+								<a href="#"
+									class="px-2 py-1 border bg-white rounded-md text-xs uppercase "
+								>
+									Javascript
+								</a>
+								<a href="#"
+									class="px-4 py-1 border border-[#464646] rounded-md uppercase bg-primaryColor  text-white text-xs"
+								>
+									Guide
+								</a>
+							</div>
+							<!-- TITLE SECTION -->
+							<div class="mt-6">
+								<h1 class="text-3xl">This is a big title and it will look great on two or even three lines. Wooohoo!</h1>
+							</div>
+						</header>
+
+						<div class="text-sm mt-3">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eveniet cupiditate earum incidunt 
+								eius. Deserunt illo neque mollitia. Aspernatur, incidunt!
+							</p>
+
+							<p class="mt-2">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Magni aliquid obcaecati, sunt eligendi aut commodi!
+							</p>
+						</div>
+
+						<footer class="flex justify-between items-center mt-8">
+							<div class="flex">
+								<span class="flex items-center justify-center rounded-full bg-primaryColor h-8 w-8">
+									<span class="text-white text-sm">MA</span>
+								</span>
+								<div class="ml-3 text-xs">
+									<h5>Martin Ahedor</h5>
+									<time>Published at 9 days </time>
+								</div>
+							</div>
+
+							<div class="hidden lg:block">
+								<a href=""
+									class="px-4 py-1 border border-[#464646] rounded-md uppercase bg-primaryColor  text-white text-xs"
+								>Read more</a>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</article>
 		</main>
 	</section>
 </body>
@@ -96,7 +156,8 @@
 				'headerColor': '#E9E9E9',
 				'primaryColor': '#464646',
 				'white': '#FFFFFF',
-				'textColor': 'red',
+				'testColor': '#1da1f2',
+				'articleHover': '#e3e4e6'
 			},
 			fontFamily: {
 				lato: ['lato']
