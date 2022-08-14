@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.tailwindcss.com"></script>
+     <title>post</title>
+</head>
+<body class="relative">
+     <div class="bg-headerColor rounded-md  px-4 py-6">
+          <nav class="flex flex-col justify-center items-center md:flex-row md:justify-between" >
+               <!-- LOGOG -->
+               <div class="md:block hidden">
+                    <a href="/">LOGO</a>
+               </div>
+
+               <!-- LEFT NAVIGATION -->
+               <div class="flex items-center md:space-x-8 text-sm sm:flex-row flex-col space-y-2">
+                    <a href="index.html" class="bg-primaryColor text-white py-1 px-5 rounded-md">Blog</a>
+                    <a href="about.html" class="hover:bg-primaryColor hover:text-white py-1 px-5 rounded-md">About</a>
+                    <a href="#" class="hover:bg-primaryColor hover:text-white py-1 px-5 rounded-md">Projects</a>
+
+                    <!-- USER PROFILE ICON -->
+                    <div class="hidden">
+                         <a href="#" class="flex items-center "> tupack 
+                              <img class="h-10 w-10 rounded-full ml-3" src="./img/profile.jpg" alt="profile-photo"> 
+                         </a>
+                    </div>
+               </div>
+          </nav>
+     </div>
+
+     <section class="px-6 py-8">
+          <main class="max-w-6xl mx-auto mt-6 lg:mt-20 mb-40">
+               <article class="max-w-4xl mx-auto">
+                  <div class=" md:flex-row flex flex-col items-center md:items-start">
+                    <div class="text-center">
+                         <div class="bg-footerColor w-60 h-60 flex justify-center items-center">
+                              <h1 class="font-bold text-8xl">MA</h1>
+                         </div>
+
+                         <p class="text-lg">Martin Kwabla Ahedor</p>
+                    </div>
+                   
+                    <div class="m-4 space-y-4">
+                         <div class="md:text-left text-center flex space-x-2 md:flex-row justify-center md:justify-start">
+                              <a href="index.html" class="bg-primaryColor text-white py-1 px-5 rounded-md">Github</a>
+                              <a href="index.html" class="bg-primaryColor text-white py-1 px-5 rounded-md">Resume</a>
+                              <a href="index.html" class="bg-primaryColor text-white py-1 px-5 rounded-md">Medium</a>
+                         </div>
+
+                         <p class="">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Inventore dicta sed expedita officiis nulla temporibus molestiae reprehenderit commodi voluptas soluta.
+                         </p>
+
+                         <p class="">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Inventore a temporibus molestiae reprehenderit commodi voluptas soluta.
+                         </p>
+                    </div>
+                  </div>
+
+               </article>
+
+               <section class="max-w-4xl mx-auto mt-20">
+                   <div class="">
+                         <h2 class="font-bold text-4xl font-thin border-b-2 pb-5">Latest post</h2>
+
+                         <article class="border-b-2 p-5">
+                              <h3 class="font-semibold text-2xl mb-5">How to quickly setup your laravel project</h3>
+
+                              <p class="mb-5">
+                                   More so, international recruitment agencies are foreign-based companies that help companies 
+                                   and employers to fill vacant job positions with foreign talents from other countries.
+                                   They search and hire qualified foreign workers who are capable of creating more value for their employers.
+                              </p>
+
+                              <a href="post.html"
+									class="px-4 py-1 border border-[#464646] rounded-md uppercase bg-primaryColor  text-white text-xs"
+								>Read more</a>
+                         </article>
+                   </div>
+               </section>
+
+               
+               
+          </main>
+     </section>
+
+     <footer class="bg-footerColor text-center py-10 px-10 rounded-md mt-20 fixed left-0 right-0 bottom-0">	
+          built with love &hearts; by
+          <p class="text-xl">
+               <a href="#" class="pb-1 border-b-2 border-indigo-500">Martin Ahedor</a>
+          </p>
+     </footer>
+</body>
+</html>
+
+<script>
+	tailwind.config = {
+		theme : {
+			colors: {
+				'fontColor': '#5F5F5F',
+				'headerColor': '#E9E9E9',
+				'primaryColor': '#464646',
+				'footerColor': '#d9d9d9',
+				'white': '#FFFFFF',
+				'testColor': '#1da1f2',
+				'articleHover': '#e3e4e6'
+			},
+			fontFamily: {
+				lato: ['lato']
+			},
+			
+			extends: {
+				dropShadow: {
+					'header': '0 0 0 4px red'
+				}
+			}
+		}
+	}
+</script>
