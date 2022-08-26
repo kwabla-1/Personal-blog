@@ -4,33 +4,73 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://cdn.tailwindcss.com"></script>
+	<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	<title>blog</title>
 </head>	
 <body>
-	<section class="px-6 py-8">
-		<div class="bg-headerColor rounded-md  px-4 py-6">
-			<nav class="md:flex md:justify-between md:items-center " >
-				<!-- LOGOG -->
+
+	<nav class="bg-headerColor rounded-md  px-4 py-6 drop-shadow-lg">
+			<div class="flex justify-between items-center mx-auto container">
+				<!-- LOGO -->
+				<div class="">lOGO</div>
+
+				<!-- MAIN NAV -->
 				<div class="">
-					<a href="/">LOGO</a>
-				</div>
-	
-				<!-- LEFT NAVIGATION -->
-				<div class="flex items-center space-x-8 text-sm">
-					<a href="index.html" class="bg-primaryColor text-white py-1 px-5 rounded-md">Blog</a>
-					<a href="about.html" class="hover:bg-primaryColor hover:text-white py-1 px-5 rounded-md">About</a>
-					<a href="projects.html" class="hover:bg-primaryColor hover:text-white py-1 px-5 rounded-md">Projects</a>
-	
-					<!-- USER PROFILE ICON -->
-					<div class=""">
-						<a href="#" class="flex items-center "> tupack 
-							<img class="h-10 w-10 rounded-full ml-3" src="./img/profile.jpg" alt="profile-photo"> 
-						</a>
+					<div class="md:hidden">
+						<div class="relative"
+							x-data="{show: false}"
+						>
+						<button
+							x-on:click="show = ! show"
+							@click.outside="show = false"
+							class="space-y-2">
+								<span class="block w-8 h-0.5 bg-black"></span>
+								<span class="block w-5 h-0.5 bg-black"></span>
+								<span class="block w-7 h-0.5 bg-black"></span>
+						</button>
+
+						<!-- the dropdown menu items -->
+						<div
+							x-show="show" 
+							class="absolute top-10 right-[-17px] z-50 w-44 bg-black rounded shadow"
+						>
+
+
+							<ul class="py-2 text-xs text-white">
+								<li>
+									<a href="about.html" class="block py-2 px-4 hover:bg-headerColor hover:text-black">Blog</a>
+								</li>
+								<li>
+									<a href="post.html" class="block py-2 px-4 hover:bg-headerColor hover:text-black">About</a>
+								</li>
+								<li>
+									<a href="pro" class="block py-2 px-4 hover:bg-headerColor hover:text-black">Project</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					</div>
+
+					<div class="hidden md:flex">
+						<div class="flex items-center space-x-8 text-sm">
+							<div class="">
+								<a href="index.html" class="bg-primaryColor text-white py-1 px-5 rounded-md">Blog</a>
+								<a href="about.html" class="hover:bg-primaryColor hover:text-white py-1 px-5 rounded-md">About</a>
+								<a href="projects.html" class="hover:bg-primaryColor hover:text-white py-1 px-5 rounded-md">Projects</a>
+							</div>
+							<!-- USER PROFILE ICON -->
+							<div class=""">
+								<a href="#" class="flex items-center "> tupack 
+									<img class="h-10 w-10 rounded-full ml-3" src="./img/profile.jpg" alt="profile-photo"> 
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
-			</nav>
-		</div>
+			</div>
+	</nav>
 
+	<section class="px-6 py-8">
 		<!-- MAIN HEADER SECTION -->
 		<header class="max-w-6xl mx-auto text-center mt-6">
 			<h1 class="text-4xl mb-2">Practical Programming, Guides and Tutorials</h1>
@@ -549,6 +589,7 @@
 				'primaryColor': '#464646',
 				'footerColor': '#d9d9d9',
 				'white': '#FFFFFF',
+				'black': '#000000',
 				'testColor': '#1da1f2',
 				'articleHover': '#e3e4e6'
 			},
